@@ -123,11 +123,11 @@ You can look at **[awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt
 
 ## ⚙️ Application Configuration
 
-| Platform | Path                      |
-| -------- | ------------------------- |
-| Linux    | `/home/lencx/.chatgpt`    |
-| macOS    | `/Users/lencx/.chatgpt`   |
-| Windows  | `C:\Users\lencx\.chatgpt` |
+| Platform | Path                             |
+| -------- | -------------------------------- |
+| Linux    | `/home/lencx/.config/chatgpt`    |
+| macOS    | `/Users/lencx/.config/chatgpt`   |
+| Windows  | `C:\Users\lencx\.config/chatgpt` |
 
 - `[.chatgpt]` - application configuration root folder
   - `chat.conf.json` - preferences configuration

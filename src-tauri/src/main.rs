@@ -38,7 +38,7 @@ async fn main() {
                 .with_colors(colors)
                 .targets([
                     // LogTarget::LogDir,
-                    // LOG PATH: ~/.chatgpt/ChatGPT.log
+                    // LOG PATH: ~/.config/chatgpt/ChatGPT.log
                     LogTarget::Folder(path::home_dir().unwrap().join(".chatgpt")),
                     LogTarget::Stdout,
                     LogTarget::Webview,

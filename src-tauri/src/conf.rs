@@ -64,7 +64,7 @@ pub struct ChatConfJson {
 
 impl ChatConfJson {
     /// init chat.conf.json
-    /// path: ~/.chatgpt/chat.conf.json
+    /// path: ~/.config/chatgpt/chat.conf.json
     pub fn init() -> PathBuf {
         info!("chat_conf_init");
         let conf_file = ChatConfJson::conf_path();
