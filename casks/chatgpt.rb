@@ -12,7 +12,7 @@ cask "chatgpt" do
   uninstall quit: "com.lencx.chatgpt"
 
   zap trash: [
-    "~/.chatgpt",
+    "~/.config/chatgpt",
     "~/Library/Caches/com.lencx.chatgpt",
     "~/Library/HTTPStorages/com.lencx.chatgpt.binarycookies",
     "~/Library/Preferences/com.lencx.chatgpt.plist",
