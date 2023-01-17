@@ -26,22 +26,22 @@
 
 ### Windows
 
-- [ChatGPT_0.8.1_x64_en-US.msi](https://github.com/lencx/ChatGPT/releases/download/v0.8.1/ChatGPT_0.8.1_x64_en-US.msi): Direct download installer
+- [ChatGPT_0.9.2_x64_en-US.msi](https://github.com/lencx/ChatGPT/releases/download/v0.9.2/ChatGPT_0.9.2_x64_en-US.msi): Direct download installer
 - Use [winget](https://winstall.app/apps/lencx.ChatGPT):
   ```bash
   # install the latest version
   winget install --id=lencx.ChatGPT -e
 
   # install the specified version
-  winget install --id=lencx.ChatGPT -e --version 0.8.1
+  winget install --id=lencx.ChatGPT -e --version 0.9.0
   ```
 
-**Note: If the installation path and application name are the same, it will lead to conflict ([#142](https://github.com/lencx/ChatGPT/issues/142#issuecomment-0.8.1))**
+**Note: If the installation path and application name are the same, it will lead to conflict ([#142](https://github.com/lencx/ChatGPT/issues/142#issuecomment-0.9.2))**
 
 ### Mac
 
-- [ChatGPT_0.8.1_x64.dmg](https://github.com/lencx/ChatGPT/releases/download/v0.8.1/ChatGPT_0.8.1_x64.dmg): Direct download installer
-- [ChatGPT.app.tar.gz](https://github.com/lencx/ChatGPT/releases/download/v0.8.1/ChatGPT.app.tar.gz): Download the `.app` installer
+- [ChatGPT_0.9.2_x64.dmg](https://github.com/lencx/ChatGPT/releases/download/v0.9.2/ChatGPT_0.9.2_x64.dmg): Direct download installer
+- [ChatGPT.app.tar.gz](https://github.com/lencx/ChatGPT/releases/download/v0.9.2/ChatGPT.app.tar.gz): Download the `.app` installer
 - Homebrew \
   Or you can install with _[Homebrew](https://brew.sh) ([Cask](https://docs.brew.sh/Cask-Cookbook)):_
   ```sh
@@ -57,8 +57,8 @@
 
 ### Linux
 
-- [chat-gpt_0.8.1_amd64.deb](https://github.com/lencx/ChatGPT/releases/download/v0.8.1/chat-gpt_0.8.1_amd64.deb): Download `.deb` installer, advantage small size, disadvantage poor compatibility
-- [chat-gpt_0.8.1_amd64.AppImage](https://github.com/lencx/ChatGPT/releases/download/v0.8.1/chat-gpt_0.8.1_amd64.AppImage): Works reliably, you can try it if `.deb` fails to run
+- [chat-gpt_0.9.2_amd64.deb](https://github.com/lencx/ChatGPT/releases/download/v0.9.2/chat-gpt_0.9.2_amd64.deb): Download `.deb` installer, advantage small size, disadvantage poor compatibility
+- [chat-gpt_0.9.2_amd64.AppImage](https://github.com/lencx/ChatGPT/releases/download/v0.9.2/chat-gpt_0.9.2_amd64.AppImage): Works reliably, you can try it if `.deb` fails to run
 - Available on [AUR](https://aur.archlinux.org/packages/chatgpt-desktop-bin) with the package name `chatgpt-desktop-bin`, and you can use your favourite AUR package manager to install it.
 
 <!-- download end -->
@@ -73,7 +73,7 @@ This is a major and exciting update. It works like a `Telegram bot command` and 
 
 You can look at **[awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt-prompts)** to find interesting features to import into the app. You can also use `Sync Prompts` to sync all in one click, and if you don't want certain prompts to appear in your slash commands, you can disable them.
 
-![chatgpt menu](./assets/chatgpt-menu.png)
+![chatgpt cmd](./assets/chatgpt-cmd.png)
 ![chatgpt sync prompts](./assets/chatgpt-sync-prompts.png)
 
 <!-- After the data import is done, you can restart the app to make the configuration take effect (`Menu -> Preferences -> Restart ChatGPT`). -->
@@ -88,7 +88,7 @@ You can look at **[awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt
 ## ✨ Features
 
 - Multi-platform: `macOS` `Linux` `Windows`
-- Export ChatGPT history (PNG, PDF and Share Link)
+- Export ChatGPT history (PNG, PDF and Markdown)
 - Automatic application upgrade notification
 - Common shortcut keys
 - System tray hover window
@@ -209,8 +209,9 @@ It's safe, just a wrapper for [OpenAI ChatGPT](https://chat.openai.com) website,
 
 #### PreInstall
 
-- [Rust](https://www.rust-lang.org/)
-- [VS Code](https://code.visualstudio.com/)
+- [Rust (Required)](https://www.rust-lang.org/)
+- [Node.js (Required)](https://nodejs.org/)
+- [VS Code (Optional)](https://code.visualstudio.com/)
   - [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
   - [tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode)
 
@@ -233,6 +234,9 @@ yarn dev
 # bundle path: src-tauri/target/release/bundle
 yarn build
 ```
+
+- [The distDir configuration is set to "../dist" but this path doesn't exist](https://github.com/lencx/ChatGPT/discussions/180)
+- [Error A public key has been found, but no private key. Make sure to set TAURI_PRIVATE_KEY environment variable.](https://github.com/lencx/ChatGPT/discussions/182)
 
 ## ❤️ Thanks
 

@@ -1,6 +1,6 @@
 // *** Core Script - DALL·E 2 ***
 
-async function init() {
+function init() {
   document.addEventListener("click", (e) => {
     const origin = e.target.closest("a");
     if (!origin || !origin.target) return;
